@@ -1,0 +1,59 @@
+research_task:
+  description: >
+    Conduct a thorough research about {topic}
+    Make sure you find any interesting and relevant information given
+    the current year is 2024. Be sure to look for sources that are reliable.
+    Do not include articles that are not directly related to {topic}.
+    Do not include sources that are not a news or informative article. 
+    If the content of the page includes a list of articles or looks like the front page of a website, do not include it in the list!
+    IMPORTANT INSTRUCTIONS ABOUT USING TOOLS: 
+    When using the Search Tool, your search query should be concise (for example, "latest news on {topic}").
+    When using tools, DO NOT ESCAPE the underscore character "_", EVER. If you need to use a tool and pass in a parameter called 'search_query', 
+    you should write 'search_query', not 'search\_query'. THIS IS VERY IMPORTANT, else the tool will not work.
+  expected_output: >
+    A bullet point list of relevant information about {topic} that has been found in not more than 10 sources.
+    Each bullet point should summarise in one or two sentences the information found in each of the source tha has been found.
+    A list of URLs which point to each of the sources identified.
+        
+reporting_task:
+  description: >
+    Verify that the URLs are correct and that they lead to the correct article. They should lead to a news article 
+    and not to a list of articles or the front page of a website. If the URL is incorrect, remove it from the list.
+    Review the context you got and expand it and prepare a full well structured
+    article with the information gathered. The full article should at least 1000 words long 
+    but not be more than 2000 words long. It should be given a title and should have paragraphs and sub headings
+    as needed. Make sure the report contains any and all relevant information.
+  expected_output: >
+    A fully fledged report with the mains topics, each with a full section of information.
+    formated as markdown file. List all the validated URLs as the source of information.
+
+designing_task:
+  description: >
+    Use the content provided and create a visually appealing, user-friendly blog page design 
+    using a provided HTML template {html_template} or design your own from scratch Focusing  on readability, 
+    intuitive navigation, and a cohesive aesthetic. Paragraph and sub headings should be in smaller font 
+    than the title and main headings and also should be in italics. List all the source URLs at the bottom as source.
+
+    include the user entered blog topic {topic}  in the space provided for personal message in the html template.
+    Follow these rules:
+    - Change the html accordingly to have smaller fonts for sub headings.
+    - Do not truncate the information or change the order of the elements. 
+    - Do not modify the content provided in any way.
+    - Do not add any additional information to the blog.
+  expected_output: >
+    Return ONLY the contents of the HTML template, without any tripple quotes like '```', '```html' or any other text. 
+    All source URLs should be listed at the bottom under source heading in a very small font
+    This output will be saved as a HTML file format and uploaded in the website
+
+blog_posting_task:
+  description: >
+    Take the html file with contents and upload it to the website using the given credentials. 
+
+    include the following personal message at the beginning of the newsletter in the space provided: {personal_message}
+    
+    Follow these rules:
+    - Do not truncate the information or change the order of the elements. 
+    - Do not modify the content provided in any way.
+    - Do not add any additional information.
+  expected_output: >
+    Posting the message to the website and give back a message response saying the posting has been successful or not

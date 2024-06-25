@@ -1,0 +1,6 @@
+#!C:\Users\padma\OneDrive\AI\padhu_auto_blog\crew\Scripts\python.exe
+import sys
+from padhu_auto_blog.main import run
+
+if __name__ == '__main__':
+    sys.exit(run())

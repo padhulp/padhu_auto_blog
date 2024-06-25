@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Ignore virtual environment directory
+crew/
+
+# Ignore other common files and directories
+.env
+.idea/
+.vscode/
+*.swp
+.DS_Store
