@@ -1,6 +1,6 @@
 # PadhuAutoBlog Crew
 
-Welcome to my PadhuAutoBlog project. This project creates a blogpost based on input topic and uses openAI, Anthropic, Llama3 or any other LLM and various internet search and custom tools to develop a blog post. In addition, the prepared blog post is posted as a blog post in my personal website. The template for the framework is based on crewAI (www.crewai.com) This template is designed to help setting up a multi-agent AI system with ease, leveraging the powerful and flexible framework provided by crewAI. 
+Welcome to my PadhuAutoBlog project. This project creates a blogpost based on input topic and uses openAI, Anthropic, Llama3 or any other LLM and various internet search and custom tools to develop a blog post. In addition, the prepared blog post is posted as a blog post in my personal website. This project's template is based on a flexible framework designed to help setting up a multi-agent AI system with ease provided by crewAI (www.crewai.com). 
 
 ## Installation
 
